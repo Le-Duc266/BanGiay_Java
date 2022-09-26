@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=dbShoesStore</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">2662001</property>
+        
+        <!--Phan cua Kien-->
+        
+        
+        <mapping class="entities.joins.SanPhamJoin"/>
+        <mapping class="entities.joins.ChiTietSanPhamJoin"/>
+        <mapping class="entities.joins.SoLuongSanPhamJoin"/>
+        <mapping class="entities.joins.AnhSanPhamJoin"/>
+        <!--het phan cua kien-->
+        <!--phần của Đức-->
+        <mapping class="entities.Banner"/>
+        
+        
+         <mapping class="entities.AnhSanPham"/>
+        <mapping class="entities.ChiTietHoaDon"/>
+        <mapping class="entities.ChiTietSanPham"/>
+        <mapping class="entities.ChiTietKhuyenMai"/>
+        <mapping class="entities.ChucVu"/>
+        <mapping class="entities.DanhMucSanPham"/>
+        <mapping class="entities.GioiTinh"/>
+        <mapping class="entities.HoaDon"/>
+        <mapping class="entities.KhuyenMai"/>
+        <mapping class="entities.MauSanPham"/>
+        <mapping class="entities.NhanHang"/>
+        <mapping class="entities.NhanVien"/>
+        <mapping class="entities.SanPham"/>
+        <mapping class="entities.SizeSanPham"/>
+        <mapping class="entities.SoLuongSanPham"/>
+        <!--hết phần của Đức-->
+        
+        
+        
+    </session-factory>
+</hibernate-configuration>
